@@ -1,131 +1,138 @@
 # 🔐 PrivLabs — Supply Chain Security Toolkit
 
-**PrivLabs Supply Chain Security Toolkit** is an **offline pre-audit security platform**
+PrivLabs Supply Chain Security Toolkit is an **offline pre-audit security platform**
 designed to assess **supply-chain attack surfaces** before exploitation.
 
-It helps security teams, consultants, and decision-makers **identify, prioritize, and
+It helps security teams, consultants, and organizations **identify, prioritize, and
 communicate risk** across infrastructure and CI/CD environments.
 
 ---
 
-## 🎯 Purpose
+## 🎯 What Problem Does PrivLabs Solve?
 
-The goal of PrivLabs is to provide **early-stage visibility** into risky configurations
-and supply-chain weaknesses **before** a full penetration test or incident occurs.
+Many supply-chain incidents occur **before** any exploitation:
 
-PrivLabs focuses on:
+- weak sudoers configurations
+- unsafe update mechanisms
+- unpinned CI/CD dependencies
+- exposed management interfaces
+- insecure privilege boundaries
 
-- Risk identification and prioritization
-- Pre-audit and scoping support
-- Supply-chain security posture assessment
-- Clear communication between technical and non-technical stakeholders
-
-This tool is **not an exploitation framework** and does **not perform active attacks**.
+PrivLabs focuses on **early risk detection** —  
+*before* a full penetration test, incident, or compliance failure.
 
 ---
 
-## 🧩 Covered Domains
+## 🧩 What PrivLabs Analyzes
 
-PrivLabs currently addresses the following supply-chain attack surfaces:
+PrivLabs provides pre-audit visibility across critical attack surfaces:
 
-- **Linux Privilege Escalation (LPE)**
-  - sudoers configuration
-  - SUID permissions
-  - PATH hygiene
-  - cron and filesystem risks
+- **Linux privilege escalation**
+  - sudoers misconfigurations
+  - SUID permission risks
+  - PATH hijacking scenarios
+- **Drupal supply-chain security**
+  - update channels
+  - signature trust
+  - MITM exposure indicators
+- **pfSense configuration audits**
+  - management exposure
+  - unsafe services
+  - credential policies
+- **CI/CD pipeline hardening**
+  - unpinned third-party actions
+  - dependency locking
+  - artifact integrity risks
 
-- **Drupal Supply Chain Security**
-  - update mechanisms
-  - integrity and trust assumptions
-  - transport and key management risks
+---
 
-- **pfSense Configuration Audit**
-  - XMLRPC exposure
-  - administrative features and hardening gaps
-  - credential and configuration risks
+## 🧠 What PrivLabs Is (and Is Not)
 
-- **CI/CD Pipeline Security**
-  - GitHub Actions / GitLab CI configurations
-  - dependency and action pinning
-  - artifact integrity and trust boundaries
+### ✅ What It Is
+- Offline security **pre-audit**
+- Risk prioritization & visibility tool
+- Decision-support for security teams
+- Pentest & compliance **complement**
+
+### ❌ What It Is Not
+- No exploitation
+- No active attacks
+- No persistence
+- No credential harvesting
+- No outbound connections
 
 ---
 
 ## 🔐 Trust & Threat Model
 
-PrivLabs is designed as an **offline analysis platform**:
+PrivLabs is designed for **enterprise and regulated environments**:
 
-- No data is stored on disk
+- No data is stored
 - No data is logged
-- No data is transmitted to third parties
+- No data is transmitted
 - All uploads are processed **in-memory only**
-- Closing the session removes all provided data
+- Session termination removes all uploaded content
 
-### PrivLabs does NOT:
-- ❌ Perform exploitation
-- ❌ Execute payloads
-- ❌ Harvest credentials
-- ❌ Require network access to production systems
-- ❌ Make outbound connections
-
-PrivLabs is compatible with **strict corporate security policies**
-and can be used in **restricted or air-gapped environments**.
+PrivLabs can be used in **air-gapped or restricted environments**.
 
 ---
 
-## 👥 Intended Audience
+## 👥 Who Is This For?
 
-PrivLabs is designed for:
+PrivLabs is used by:
 
-- Blue Teams / SecOps / SOC analysts
-- Security consultants and pentesters (pre-audit & scoping)
-- Risk and compliance teams
-- Architecture and DevSecOps reviews
-- CISOs and security decision-makers
+- **Blue Teams / SOC / SecOps**
+- **Pentesters & security consultants** (pre-audit & scoping)
+- **CISOs & security managers**
+- **DevSecOps & platform teams**
+- **Risk & compliance teams**
 
-It **complements**, but does not replace:
-- penetration tests
-- red team engagements
-- compliance audits
+It is especially valuable when you need to **explain risk clearly**
+to both technical and non-technical stakeholders.
 
 ---
 
-## 🚀 Usage Model
+## 💼 Typical Use Cases
 
-PrivLabs can be used as:
-
-- A standalone **pre-audit assessment tool**
-- A **decision-support platform** before pentesting
-- A **demonstration and communication aid** during security reviews
-- A foundation for consulting, workshops, and internal training
+- Pre-pentest risk assessment
+- Internal security posture reviews
+- Supply-chain hardening initiatives
+- Client-facing security audits
+- Executive risk summaries
+- Architecture & DevSecOps reviews
 
 ---
 
-## 📄 Reporting
+## 💰 Pricing & Licensing (Indicative)
 
-The platform provides **executive-ready summaries**
-designed to support risk communication and remediation planning.
+PrivLabs is available under several engagement models:
 
-(PDF and advanced reporting features may vary depending on deployment and licensing.)
+- **Early adopter license** (individual / consultant)
+- **Professional license** (teams & internal usage)
+- **Enterprise license** (multi-user, support, customization)
+- **Assessment & consulting engagements**
+- **Workshops & training sessions**
+
+Pricing depends on usage scope and engagement type.
+
+👉 **Contact for details or demo.**
+
+---
+
+## 📞 How to Engage
+
+- 📩 Contact: **privexploits@protonmail.com**
+- 🧪 Demo: available on request
+- 🛠️ Early adopter access: limited availability
 
 ---
 
 ## ⚠️ Disclaimer
 
-PrivLabs performs **non-destructive, offline security analysis only**.
-
-No exploitation.  
-No active attacks.  
-No persistence.  
+This toolkit performs **non-destructive audits only**.  
+No exploitation. No active attacks.
 
 ---
 
-## 📫 Contact
-
-**PrivLabs**  
-Security Toolkit — Supply Chain Risk Assessment  
-📧 privexploits@protonmail.com
-
----
-
-© 2025 PrivLabs
+Built with Streamlit.  
+PrivLabs © 2025
