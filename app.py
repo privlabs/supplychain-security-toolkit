@@ -11,8 +11,8 @@ st.set_page_config(
 # --------------------------------------------------
 # Header
 # --------------------------------------------------
-st.title("🔐 SupplyChain Security Toolkit")
-st.write("Audit • Detect • Harden — Linux · Drupal · pfSense · CI/CD")
+st.title("🛡️ PrivLabs")
+st.caption("Supply Chain Security Toolkit — Audit • Detect • Harden (Linux • Drupal • pfSense • CI/CD)")
 
 # --------------------------------------------------
 # ⚠️ SECURITY DISCLAIMER (OBLIGATOIRE)
