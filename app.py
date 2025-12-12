@@ -17,6 +17,11 @@ st.caption(
     "Audit • Detect • Harden (Linux • Drupal • pfSense • CI/CD)"
 )
 
+# 🔹 Positioning reinforcement (subtle, professional)
+st.caption(
+    "Offline pre-audit assessment platform — risk visibility before scanning or exploitation."
+)
+
 # --------------------------------------------------
 # ⚠️ SECURITY DISCLAIMER (OBLIGATOIRE)
 # --------------------------------------------------
@@ -64,10 +69,16 @@ if menu == "Executive Summary":
 
     st.markdown(
         """
-**PrivLabs Supply Chain Security Toolkit** is an **offline pre-audit security platform**
-designed to assess **supply-chain attack surfaces** before exploitation.
+**PrivLabs** is an **offline supply-chain pre-audit assessment platform**.
 
-The goal is to help **security teams, consultants, and decision-makers**:
+It helps security teams, consultants, and decision-makers **identify, structure,
+and communicate risk** *before* scanning, exploitation, or full penetration testing.
+
+PrivLabs is designed to answer one simple question early:
+
+> *“Where should we focus our security effort before things break?”*
+
+### What PrivLabs Enables
 
 - Identify **high-risk configurations** early
 - Prioritize remediation based on **business impact**
@@ -77,7 +88,7 @@ The goal is to help **security teams, consultants, and decision-makers**:
 PrivLabs focuses on **prevention, visibility, and risk prioritization**  
 —not exploitation.
 
-It complements existing **pentest, red team, blue team, and compliance workflows**.
+It **complements** existing **pentest, red team, blue team, and compliance workflows**.
         """
     )
 
