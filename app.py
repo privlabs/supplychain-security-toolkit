@@ -4,7 +4,7 @@ import streamlit as st
 # App configuration
 # --------------------------------------------------
 st.set_page_config(
-    page_title="SupplyChain Security Toolkit",
+    page_title="PrivLabs — Supply Chain Security Toolkit",
     layout="wide"
 )
 
@@ -36,42 +36,45 @@ col3.metric("Warnings", "5", "▼ -1")
 st.divider()
 
 # --------------------------------------------------
-# 📊 Executive Summary (BUSINESS / DECISION MAKERS)
-# --------------------------------------------------
-st.subheader("📊 Executive Summary")
-
-st.markdown(
-    """
-**PrivLabs Supply Chain Security Toolkit** provides a **pre-audit risk assessment**
-of critical supply-chain attack surfaces across infrastructure and delivery pipelines.
-
-The objective is to help **security teams, consultants, and decision-makers**:
-
-- Identify **high-risk configurations** before a full penetration test
-- Prioritize remediation efforts based on **business impact**
-- Reduce exposure to **supply-chain compromise scenarios**
-- Support **risk communication** with technical and non-technical stakeholders
-
-This tool is designed for **early-stage risk detection**, not exploitation,
-and complements existing pentest and compliance workflows.
-"""
-)
-
-st.divider()
-
-# --------------------------------------------------
 # Sidebar
 # --------------------------------------------------
 menu = st.sidebar.radio(
-    "📦 Modules",
+    "📦 Sections",
     [
+        "Executive Summary",
         "Linux LPE Audit",
         "Drupal Supply Chain",
         "pfSense Audit",
         "CI/CD Pipeline",
-        "Reports"
+        "Reports",
+        "Trust & Threat Model"
     ]
 )
+
+# --------------------------------------------------
+# Executive Summary
+# --------------------------------------------------
+if menu == "Executive Summary":
+    st.header("📊 Executive Summary")
+
+    st.markdown(
+        """
+**PrivLabs Supply Chain Security Toolkit** is an **offline pre-audit security platform**
+designed to assess **supply-chain attack surfaces** before exploitation.
+
+The goal is to help **security teams, consultants, and decision-makers**:
+
+- Identify **high-risk configurations** early
+- Prioritize remediation based on **business impact**
+- Reduce exposure to **supply-chain compromise scenarios**
+- Communicate risk clearly to **technical and non-technical stakeholders**
+
+PrivLabs focuses on **prevention, visibility, and risk prioritization**  
+—not exploitation.
+
+It complements existing **pentest, red team, blue team, and compliance workflows**.
+        """
+    )
 
 # --------------------------------------------------
 # Linux LPE Audit Module
@@ -152,6 +155,66 @@ if menu == "Reports":
         "⬇️ Download Audit Summary (PDF)",
         data=b"Coming soon",
         file_name="audit_report.pdf"
+    )
+
+# --------------------------------------------------
+# Trust & Threat Model
+# --------------------------------------------------
+if menu == "Trust & Threat Model":
+    st.header("🔐 Trust & Threat Model")
+
+    st.subheader("Threat Model")
+    st.markdown(
+        """
+PrivLabs is designed as an **offline analysis platform**.
+
+It assumes the following threat model:
+
+- The user provides configuration files or metadata **voluntarily**
+- No active exploitation is performed
+- No network access to production systems is required
+- No lateral movement, payload execution, or RCE
+        """
+    )
+
+    st.subheader("Data Handling & Privacy")
+    st.markdown(
+        """
+- No data is stored on disk
+- No data is logged
+- No data is transmitted to third parties
+- All uploads are processed **in-memory only**
+- Closing the session removes all uploaded content
+
+PrivLabs is compatible with **strict corporate security policies**
+and **air-gapped environments**.
+        """
+    )
+
+    st.subheader("What PrivLabs Does NOT Do")
+    st.markdown(
+        """
+- ❌ No exploitation
+- ❌ No active attacks
+- ❌ No persistence
+- ❌ No credential harvesting
+- ❌ No outbound connections
+        """
+    )
+
+    st.subheader("Intended Usage")
+    st.markdown(
+        """
+PrivLabs is intended for:
+
+- Security teams (Blue Team / SecOps / SOC)
+- Pentesters & consultants (pre-audit & scoping)
+- Risk & compliance teams
+- Architecture & DevSecOps reviews
+
+It is **not a replacement for a penetration test**,  
+but a **risk-reduction and prioritization layer** before it.
+        """
     )
 
 # --------------------------------------------------
