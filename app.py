@@ -9,10 +9,13 @@ st.set_page_config(
 )
 
 # --------------------------------------------------
-# Header
+# Header / Branding
 # --------------------------------------------------
 st.title("🛡️ PrivLabs")
-st.caption("Supply Chain Security Toolkit — Audit • Detect • Harden (Linux • Drupal • pfSense • CI/CD)")
+st.caption(
+    "Supply Chain Security Toolkit — "
+    "Audit • Detect • Harden (Linux • Drupal • pfSense • CI/CD)"
+)
 
 # --------------------------------------------------
 # ⚠️ SECURITY DISCLAIMER (OBLIGATOIRE)
@@ -22,6 +25,15 @@ st.info(
     "No data is stored, logged, or transmitted. "
     "All uploads are processed in-memory for audit simulation purposes."
 )
+
+# --------------------------------------------------
+# Global Risk Overview (PRO DASHBOARD)
+# --------------------------------------------------
+col1, col2, col3 = st.columns(3)
+col1.metric("Global Risk Score", "72 / 100", "▲ +8")
+col2.metric("Critical Findings", "2", "▲ +1")
+col3.metric("Warnings", "5", "▼ -1")
+st.divider()
 
 # --------------------------------------------------
 # Sidebar
@@ -118,4 +130,11 @@ if menu == "Reports":
         file_name="audit_report.pdf"
     )
 
-
+# --------------------------------------------------
+# Footer (ENTERPRISE / LEGAL)
+# --------------------------------------------------
+st.divider()
+st.caption(
+    "PrivLabs © 2025 • Security Toolkit • Offline audit only • "
+    "Contact: privexploits@protonmail.com"
+)
