@@ -36,6 +36,30 @@ col3.metric("Warnings", "5", "▼ -1")
 st.divider()
 
 # --------------------------------------------------
+# 📊 Executive Summary (BUSINESS / DECISION MAKERS)
+# --------------------------------------------------
+st.subheader("📊 Executive Summary")
+
+st.markdown(
+    """
+**PrivLabs Supply Chain Security Toolkit** provides a **pre-audit risk assessment**
+of critical supply-chain attack surfaces across infrastructure and delivery pipelines.
+
+The objective is to help **security teams, consultants, and decision-makers**:
+
+- Identify **high-risk configurations** before a full penetration test
+- Prioritize remediation efforts based on **business impact**
+- Reduce exposure to **supply-chain compromise scenarios**
+- Support **risk communication** with technical and non-technical stakeholders
+
+This tool is designed for **early-stage risk detection**, not exploitation,
+and complements existing pentest and compliance workflows.
+"""
+)
+
+st.divider()
+
+# --------------------------------------------------
 # Sidebar
 # --------------------------------------------------
 menu = st.sidebar.radio(
