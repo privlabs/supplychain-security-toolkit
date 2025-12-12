@@ -27,12 +27,17 @@ st.info(
 )
 
 # --------------------------------------------------
-# Global Risk Overview (PRO DASHBOARD)
+# Global Risk Overview (SEMI-DYNAMIC)
 # --------------------------------------------------
+critical = 2
+warnings = 5
+
+risk_score = max(0, 100 - (critical * 20 + warnings * 10))
+
 col1, col2, col3 = st.columns(3)
-col1.metric("Global Risk Score", "72 / 100", "▲ +8")
-col2.metric("Critical Findings", "2", "▲ +1")
-col3.metric("Warnings", "5", "▼ -1")
+col1.metric("Global Risk Score", f"{risk_score} / 100")
+col2.metric("Critical Findings", str(critical))
+col3.metric("Warnings", str(warnings))
 st.divider()
 
 # --------------------------------------------------
