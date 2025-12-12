@@ -23,12 +23,21 @@ st.caption(
 )
 
 # --------------------------------------------------
-# ⚠️ SECURITY DISCLAIMER (OBLIGATOIRE)
+# ⚠️ SECURITY DISCLAIMER (MANDATORY)
 # --------------------------------------------------
 st.info(
     "⚠️ This tool performs offline analysis only. "
     "No data is stored, logged, or transmitted. "
     "All uploads are processed in-memory for audit simulation purposes."
+)
+
+# --------------------------------------------------
+# 🔍 AUTOMATION VS HUMAN INTERPRETATION (KEY CLARIFICATION)
+# --------------------------------------------------
+st.info(
+    "ℹ️ PrivLabs performs automated pre-audit analysis and surfaces risk signals. "
+    "Interpretation, prioritization, and remediation decisions are made by humans. "
+    "Optional consulting support is available when deeper analysis or contextualization is required."
 )
 
 # --------------------------------------------------
