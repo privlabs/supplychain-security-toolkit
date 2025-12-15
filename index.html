@@ -1,112 +1,221 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>PrivLabs — Supply Chain Pre-Audit Platform</title>
+  <meta charset="UTF-8">
+  <title>PrivLabs — Supply Chain Security Pre-Audit Platform</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="PrivLabs is an offline supply-chain security pre-audit platform designed to identify and prioritize risk before scanning or pentesting.">
   <style>
     body {
-      font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
-      background: #0b0f19;
-      color: #e6e9ef;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
       margin: 0;
-      padding: 0;
+      background-color: #0b0f14;
+      color: #e6e6e6;
+      line-height: 1.6;
     }
-    .container {
-      max-width: 900px;
-      margin: auto;
-      padding: 4rem 1.5rem;
+    header {
+      padding: 24px 48px;
+      border-bottom: 1px solid #1e2630;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
     }
-    h1 {
-      font-size: 2.4rem;
-      margin-bottom: 1rem;
+    header h1 {
+      font-size: 20px;
+      margin: 0;
+    }
+    nav a {
+      color: #9fb3c8;
+      text-decoration: none;
+      margin-left: 24px;
+      font-size: 14px;
+    }
+    nav a:hover {
+      color: #ffffff;
+    }
+    main {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 64px 24px;
+    }
+    section {
+      margin-bottom: 64px;
     }
     h2 {
-      margin-top: 3rem;
-      font-size: 1.6rem;
+      font-size: 28px;
+      margin-bottom: 16px;
+    }
+    h3 {
+      font-size: 20px;
+      margin-top: 32px;
     }
     p {
-      line-height: 1.6;
-      color: #cfd6e1;
+      max-width: 720px;
+    }
+    ul {
+      padding-left: 20px;
+    }
+    .hero {
+      margin-bottom: 80px;
+    }
+    .hero p {
+      font-size: 18px;
+      color: #c9d1d9;
+    }
+    .badge {
+      display: inline-block;
+      padding: 4px 10px;
+      border-radius: 4px;
+      background-color: #15202b;
+      color: #7aa2f7;
+      font-size: 12px;
+      margin-bottom: 16px;
     }
     .cta {
-      margin-top: 2rem;
+      margin-top: 32px;
     }
-    .button {
+    .cta a {
       display: inline-block;
-      padding: 0.75rem 1.25rem;
-      margin-right: 1rem;
-      background: #2563eb;
-      color: white;
-      text-decoration: none;
+      margin-right: 16px;
+      padding: 10px 18px;
       border-radius: 6px;
-      font-weight: 600;
+      background-color: #238636;
+      color: #ffffff;
+      text-decoration: none;
+      font-size: 14px;
     }
-    .secondary {
-      background: #1f2937;
+    .cta a.secondary {
+      background-color: #21262d;
     }
     footer {
-      margin-top: 4rem;
-      font-size: 0.9rem;
-      color: #9aa3b2;
+      padding: 32px 24px;
+      border-top: 1px solid #1e2630;
+      text-align: center;
+      font-size: 13px;
+      color: #8b949e;
     }
   </style>
 </head>
+
 <body>
-  <div class="container">
-    <h1>PrivLabs</h1>
-    <p><strong>Offline supply-chain pre-audit assessment platform.</strong></p>
 
-    <p>
-      PrivLabs helps security teams, consultants, and decision-makers
-      <strong>identify, structure, and communicate risk</strong>
-      before scanning, exploitation, or full penetration testing.
-    </p>
+<header>
+  <h1>🔐 PrivLabs</h1>
+  <nav>
+    <a href="./index.html">Home</a>
+    <a href="./pricing.html">Pricing</a>
+    <a href="https://privlabs-security-toolkit.streamlit.app/" target="_blank">Live Demo</a>
+    <a href="mailto:privexploits@protonmail.com">Contact</a>
+  </nav>
+</header>
 
-    <h2>Why PrivLabs?</h2>
-    <p>
-      Most incidents originate from weak configurations and trust assumptions:
-      privilege boundaries, update mechanisms, CI/CD pipelines.
-    </p>
-    <p>
-      PrivLabs focuses on <strong>early risk signals</strong>,
-      not exploitation — so teams can decide where to focus first.
-    </p>
+<main>
 
-    <h2>What it does</h2>
-    <ul>
-      <li>Linux privilege escalation pre-audit</li>
-      <li>CI/CD pipeline trust analysis</li>
-      <li>Supply-chain configuration reviews</li>
-      <li>Executive-friendly risk summaries</li>
-    </ul>
-
-    <h2>What it is not</h2>
+  <section class="hero">
+    <span class="badge">Offline • Pre-Audit • Decision Support</span>
+    <h2>Supply Chain Security — Before Scanning or Pentesting</h2>
     <p>
-      No exploitation. No active attacks. No scanning.
-      PrivLabs complements pentesting — it does not replace it.
-    </p>
-
-    <h2>Trust & Security</h2>
-    <p>
-      Offline analysis only.  
-      No data stored, logged, or transmitted.  
-      All processing is done in-memory.
+      PrivLabs is an <strong>offline supply-chain security pre-audit platform</strong>
+      designed to help teams understand <em>where risk actually concentrates</em>
+      before launching scanners, exploitation, or full penetration tests.
     </p>
 
     <div class="cta">
-      <a class="button" href="https://privlabs-security-toolkit.streamlit.app/" target="_blank">
-        View Live Demo
-      </a>
-      <a class="button secondary" href="mailto:privexploits@protonmail.com">
-        Request a Demo
-      </a>
+      <a href="https://privlabs-security-toolkit.streamlit.app/" target="_blank">Try Live Demo</a>
+      <a href="./pricing.html" class="secondary">View Pricing</a>
     </div>
+  </section>
 
-    <footer>
-      PrivLabs © 2025 — Pre-audit risk assessment platform  
-      Contact: privexploits@protonmail.com
-    </footer>
-  </div>
+  <section>
+    <h2>The Gap Before Exploitation</h2>
+    <p>
+      Many security incidents start long before exploitation:
+    </p>
+    <ul>
+      <li>weak sudoers and privilege boundaries</li>
+      <li>unsafe update mechanisms</li>
+      <li>unpinned CI/CD dependencies</li>
+      <li>exposed management interfaces</li>
+      <li>implicit trust in supply-chain components</li>
+    </ul>
+    <p>
+      PrivLabs focuses on <strong>early risk signals</strong> —
+      the issues that shape attack paths <em>before</em> any exploit is launched.
+    </p>
+  </section>
+
+  <section>
+    <h2>What PrivLabs Analyzes</h2>
+
+    <h3>Linux Privilege Escalation</h3>
+    <ul>
+      <li>Sudoers misconfigurations</li>
+      <li>SUID permission risks</li>
+      <li>PATH hijacking scenarios</li>
+    </ul>
+
+    <h3>Drupal Supply Chain</h3>
+    <ul>
+      <li>Update channels and signature trust</li>
+      <li>MITM exposure indicators</li>
+      <li>Configuration-level risks</li>
+    </ul>
+
+    <h3>CI/CD Pipelines</h3>
+    <ul>
+      <li>Unpinned third-party actions</li>
+      <li>Dependency and artifact integrity risks</li>
+      <li>Trust chain visibility</li>
+    </ul>
+
+    <h3>pfSense Configuration Audits</h3>
+    <ul>
+      <li>Management exposure</li>
+      <li>Unsafe services</li>
+      <li>Credential and policy weaknesses</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>What PrivLabs Is — and Is Not</h2>
+
+    <h3>✔ What It Is</h3>
+    <ul>
+      <li>Offline pre-audit security platform</li>
+      <li>Risk prioritization & decision support</li>
+      <li>Pentest and compliance complement</li>
+    </ul>
+
+    <h3>✘ What It Is Not</h3>
+    <ul>
+      <li>No exploitation</li>
+      <li>No active attacks</li>
+      <li>No scanning</li>
+      <li>No data storage or transmission</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Built for Trust</h2>
+    <p>
+      PrivLabs is designed for enterprise, regulated, and restricted environments:
+    </p>
+    <ul>
+      <li>No data stored</li>
+      <li>No logging</li>
+      <li>No outbound connections</li>
+      <li>All processing done in-memory</li>
+    </ul>
+    <p>
+      It can be used in <strong>air-gapped or sensitive environments</strong>.
+    </p>
+  </section>
+
+</main>
+
+<footer>
+  PrivLabs © 2025 — Offline Supply Chain Security Pre-Audit Platform
+</footer>
+
 </body>
 </html>
