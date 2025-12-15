@@ -103,109 +103,16 @@ to both technical and non-technical stakeholders.
 
 ---
 
-## 💰 Pricing & Packages (Indicative)
+## 📄 Documentation & Pricing
 
-PrivLabs is available through simple, transparent engagement models.
-Pricing reflects **access, usage scope, and support**, not exploitation capability.
-
-### 🟢 Starter — Individual / Consultant
-
-**Who it’s for**
-- Independent consultants
-- Pentesters
-- Security freelancers
-- Technical auditors
-
-**Includes**
-- Access to the PrivLabs web application
-- Modules:
-  - Linux LPE pre-audit
-  - Drupal supply-chain review
-  - pfSense configuration audit
-  - CI/CD pipeline pre-audit
-- Executive Summary & Global Risk Overview
-- Trust & Threat Model documentation
-- Offline, non-destructive usage
-- Email support (best-effort)
-
-**Typical usage**
-- Pre-audit assessments
-- Pentest scoping
-- Client demos
-- Preliminary risk reporting
-
-**Indicative price**
-👉 €99 / year  
-(or €149 one-time early adopter license)
-
----
-
-### 🔵 Pro — Teams / Internal Security
-
-**Who it’s for**
-- Blue Team / SecOps / SOC
-- DevSecOps teams
-- Consulting firms / MSSPs
-- SMEs and scale-ups
-
-**Includes**
-- Everything in Starter
-- Team / internal usage
-- Priority support
-- Remediation guidance (best practices)
-- Management / CISO-oriented reporting
-- Client usage rights (internal audits, no resale)
-
-**Typical usage**
-- Internal security posture reviews
-- Pentest & compliance preparation
-- CISO decision support
-- Internal workshops
-
-**Indicative price**
-👉 €490 / year  
-(or €690 including demo & onboarding session)
-
----
-
-### 🔴 Enterprise — Organizations / Consulting / Custom
-
-**Who it’s for**
-- Large organizations
-- Consulting firms
-- CERT / SOC
-- Regulated environments
-
-**Includes**
-- Everything in Pro
-- Multi-user licensing
-- Priority support & customization
-- Module adaptation / custom wording
-- Dedicated or restricted deployments (on-prem / air-gapped)
-- Training sessions or workshops
-- Strategic supply-chain security support
-
-**Indicative price**
-👉 From €1,500 / year  
-(depending on scope, users, and services)
-
----
-
-### 🧪 Early Adopter / Beta
-
-- Early access
-- Direct feedback loop
-- Influence on roadmap
-- Preferential pricing
-
-👉 Contact required.
+- 📊 **Pricing & engagement models**: see [`pricing.md`](./pricing.md)
+- 🧪 Demo: available on request
 
 ---
 
 ## 📞 How to Engage
 
 - 📩 Contact: **privexploits@protonmail.com**
-- 🧪 Demo: available on request
 - 🛠️ Early adopter access: limited availability
 
 ---
