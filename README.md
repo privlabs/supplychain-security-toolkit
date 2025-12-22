@@ -110,6 +110,23 @@ to both technical and non-technical stakeholders.
 
 ---
 
+## How teams typically work with me
+
+Common entry points:
+
+- Exploratory security review (pre-pentest)  
+  Identify trust boundaries, update paths, and configuration risks before exploitation.
+
+- Supply-chain & update mechanism review  
+  CMS, CI/CD, appliances, CI/CD pipelines.
+
+- Incident response & root cause analysis  
+  Structural analysis of failures — not just patching symptoms.
+
+- Research & advisory (retainer or mission-based)  
+  Independent security research aligned with real-world product constraints.
+
+
 ## 📞 How to Engage
 
 - 📩 Contact: **privexploits@protonmail.com**
