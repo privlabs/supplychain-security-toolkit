@@ -126,6 +126,7 @@ Common entry points:
 - Research & advisory (retainer or mission-based)  
   Independent security research aligned with real-world product constraints.
 
+---
 
 ## 📞 How to Engage
 
